@@ -91,7 +91,6 @@
                                 }];
             }
         } else { // iOS < version 8
-            //        self.appViewController.view.hidden = NO;
             [[[self loginViewController] presentingViewController] dismissViewControllerAnimated: animated completion:NULL];
         }
         // keep our record up to date here:
@@ -118,10 +117,7 @@
                                 }];
             }
         } else { // iOS version < 8
-            //            [self.appViewController.view setHidden:YES];
             [self.window.rootViewController presentViewController:self.loginViewController animated:animated completion:NULL];
-            //            [self.window.rootViewController.view snapshotViewAfterScreenUpdates:YES];
-            //            [self.appViewController.view snapshotViewAfterScreenUpdates:YES];
         }
         // and when we're done...
         self.isLoginViewControllerDisplayed = YES;
