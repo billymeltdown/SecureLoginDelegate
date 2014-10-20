@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		28FA834A19F47B47003859CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA834919F47B47003859CE /* main.m */; };
 		28FA834D19F47B47003859CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA834C19F47B47003859CE /* AppDelegate.m */; };
-		28FA835019F47B47003859CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA834F19F47B47003859CE /* ViewController.m */; };
-		28FA835319F47B47003859CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FA835119F47B47003859CE /* Main.storyboard */; };
 		28FA835519F47B47003859CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FA835419F47B47003859CE /* Images.xcassets */; };
-		28FA835819F47B47003859CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FA835619F47B47003859CE /* LaunchScreen.xib */; };
 		28FA836419F47B47003859CE /* SecureLoginDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA836319F47B47003859CE /* SecureLoginDelegateTests.m */; };
+		28FA836E19F47C3E003859CE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FA836D19F47C3E003859CE /* MainWindow.xib */; };
+		28FA837319F47DA2003859CE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA837219F47DA2003859CE /* LoginViewController.m */; };
+		28FA837419F47DA2003859CE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA837219F47DA2003859CE /* LoginViewController.m */; };
+		28FA837719F47DC1003859CE /* ProtectedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA837619F47DC1003859CE /* ProtectedDataViewController.m */; };
+		28FA837819F47DC1003859CE /* ProtectedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA837619F47DC1003859CE /* ProtectedDataViewController.m */; };
+		28FA838019F483FA003859CE /* SecureDelegateNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA837F19F483FA003859CE /* SecureDelegateNotifications.m */; };
+		28FA838119F483FA003859CE /* SecureDelegateNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA837F19F483FA003859CE /* SecureDelegateNotifications.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,18 @@
 		28FA834919F47B47003859CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28FA834B19F47B47003859CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28FA834C19F47B47003859CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28FA834E19F47B47003859CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		28FA834F19F47B47003859CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		28FA835219F47B47003859CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28FA835419F47B47003859CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		28FA835719F47B47003859CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		28FA835D19F47B47003859CE /* SecureLoginDelegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureLoginDelegateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FA836219F47B47003859CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28FA836319F47B47003859CE /* SecureLoginDelegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureLoginDelegateTests.m; sourceTree = "<group>"; };
+		28FA836D19F47C3E003859CE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28FA837119F47DA2003859CE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		28FA837219F47DA2003859CE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		28FA837519F47DC1003859CE /* ProtectedDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectedDataViewController.h; sourceTree = "<group>"; };
+		28FA837619F47DC1003859CE /* ProtectedDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectedDataViewController.m; sourceTree = "<group>"; };
+		28FA837C19F483E4003859CE /* SecureDelegateNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureDelegateNotifications.h; sourceTree = "<group>"; };
+		28FA837F19F483FA003859CE /* SecureDelegateNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureDelegateNotifications.m; sourceTree = "<group>"; };
+		28FA838519F55346003859CE /* SecureLoginDelegate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureLoginDelegate_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +91,15 @@
 			children = (
 				28FA834B19F47B47003859CE /* AppDelegate.h */,
 				28FA834C19F47B47003859CE /* AppDelegate.m */,
-				28FA834E19F47B47003859CE /* ViewController.h */,
-				28FA834F19F47B47003859CE /* ViewController.m */,
-				28FA835119F47B47003859CE /* Main.storyboard */,
 				28FA835419F47B47003859CE /* Images.xcassets */,
-				28FA835619F47B47003859CE /* LaunchScreen.xib */,
 				28FA834719F47B47003859CE /* Supporting Files */,
+				28FA836D19F47C3E003859CE /* MainWindow.xib */,
+				28FA837119F47DA2003859CE /* LoginViewController.h */,
+				28FA837219F47DA2003859CE /* LoginViewController.m */,
+				28FA837519F47DC1003859CE /* ProtectedDataViewController.h */,
+				28FA837619F47DC1003859CE /* ProtectedDataViewController.m */,
+				28FA837C19F483E4003859CE /* SecureDelegateNotifications.h */,
+				28FA837F19F483FA003859CE /* SecureDelegateNotifications.m */,
 			);
 			path = SecureLoginDelegate;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 		28FA834719F47B47003859CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28FA838519F55346003859CE /* SecureLoginDelegate_Prefix.pch */,
 				28FA834819F47B47003859CE /* Info.plist */,
 				28FA834919F47B47003859CE /* main.m */,
 			);
@@ -168,6 +180,7 @@
 				TargetAttributes = {
 					28FA834319F47B47003859CE = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = PD7G6HRMGV;
 					};
 					28FA835C19F47B47003859CE = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -199,9 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FA835319F47B47003859CE /* Main.storyboard in Resources */,
-				28FA835819F47B47003859CE /* LaunchScreen.xib in Resources */,
 				28FA835519F47B47003859CE /* Images.xcassets in Resources */,
+				28FA836E19F47C3E003859CE /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FA835019F47B47003859CE /* ViewController.m in Sources */,
 				28FA834D19F47B47003859CE /* AppDelegate.m in Sources */,
 				28FA834A19F47B47003859CE /* main.m in Sources */,
+				28FA837319F47DA2003859CE /* LoginViewController.m in Sources */,
+				28FA838019F483FA003859CE /* SecureDelegateNotifications.m in Sources */,
+				28FA837719F47DC1003859CE /* ProtectedDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FA838119F483FA003859CE /* SecureDelegateNotifications.m in Sources */,
+				28FA837819F47DC1003859CE /* ProtectedDataViewController.m in Sources */,
+				28FA837419F47DA2003859CE /* LoginViewController.m in Sources */,
 				28FA836419F47B47003859CE /* SecureLoginDelegateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +259,6 @@
 			targetProxy = 28FA835E19F47B47003859CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		28FA835119F47B47003859CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28FA835219F47B47003859CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		28FA835619F47B47003859CE /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28FA835719F47B47003859CE /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		28FA836519F47B47003859CE /* Debug */ = {
@@ -286,6 +284,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -297,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -327,13 +326,14 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SecureLoginDelegate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SecureLoginDelegate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

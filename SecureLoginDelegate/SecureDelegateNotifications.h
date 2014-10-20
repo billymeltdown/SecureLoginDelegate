@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecureDelegateNotifications.m
 //  SecureLoginDelegate
 //
 //  Created by Billy Gray on 10/19/14.
@@ -8,8 +8,4 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
-@end
-
+extern NSString * const kSecureDelegateTimeToLockNotifiction;

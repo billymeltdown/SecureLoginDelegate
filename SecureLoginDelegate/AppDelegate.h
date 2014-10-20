@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginViewController.h"
+#import "ProtectedDataViewController.h"
+#import "SecureDelegateNotifications.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, LoginDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) IBOutlet UIWindow *window;
+@property (strong, nonatomic) IBOutlet LoginViewController *loginViewController;
+@property (strong, nonatomic) IBOutlet ProtectedDataViewController *dataViewController;
 
 @end
 
