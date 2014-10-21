@@ -126,7 +126,7 @@
 
 - (void)_timeToLockNotification:(NSNotification *)notification {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [self _hideAppView:YES];
+    [self performSelectorOnMainThread:@selector(_hideAppView:) withObject:nil waitUntilDone:NO];
 }
 
 - (void)dealloc {
@@ -137,7 +137,7 @@
 #pragma mark - LoginDelegate
 
 - (void)loginComplete:(id)sender {
-    [self _showAppView:YES];
+    [self performSelectorOnMainThread:@selector(_showAppView:) withObject:nil waitUntilDone:NO];
     // We'll want to start watching for lock notifications
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(_timeToLockNotification:)
