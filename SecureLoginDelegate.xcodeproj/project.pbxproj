@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		288FDFA31A5CAFFB004E61F1 /* CompatMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompatMacros.h; sourceTree = "<group>"; };
 		28FA834419F47B47003859CE /* SecureLoginDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureLoginDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FA834819F47B47003859CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28FA834919F47B47003859CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 				28FA837619F47DC1003859CE /* ProtectedDataViewController.m */,
 				28FA837C19F483E4003859CE /* SecureDelegateNotifications.h */,
 				28FA837F19F483FA003859CE /* SecureDelegateNotifications.m */,
+				288FDFA31A5CAFFB004E61F1 /* CompatMacros.h */,
 			);
 			path = SecureLoginDelegate;
 			sourceTree = "<group>";
@@ -416,6 +418,7 @@
 				28FA836919F47B47003859CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28FA836A19F47B47003859CE /* Build configuration list for PBXNativeTarget "SecureLoginDelegateTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +427,7 @@
 				28FA836C19F47B47003859CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
