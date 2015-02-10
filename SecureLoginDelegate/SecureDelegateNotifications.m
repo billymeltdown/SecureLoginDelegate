@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Zetetic. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "SecureDelegateNotifications.h"
 
 NSString * const kSecureDelegateTimeToLockNotifiction = @"kSecureDelegateTimeToLockNotifiction";

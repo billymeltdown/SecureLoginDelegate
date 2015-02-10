@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "ZTSecureDataController.h"
 
 @interface LoginViewController ()
 
@@ -28,7 +29,7 @@
 }
 
 - (IBAction)unlock:(id)sender {
-    [self.delegate loginComplete:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSecureDataControllerUnlockNotifiction object:nil];
 }
 
 @end

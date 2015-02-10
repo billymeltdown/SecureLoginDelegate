@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280DDCCE1A8A78890078E3AC /* ZTSecureDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280DDCCD1A8A78890078E3AC /* ZTSecureDataController.m */; };
+		280DDCCF1A8A78890078E3AC /* ZTSecureDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280DDCCD1A8A78890078E3AC /* ZTSecureDataController.m */; };
+		28D4BB9F1A6EF37B00985269 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D4BB9C1A6EEF2C00985269 /* libsqlcipher.a */; };
 		28FA834A19F47B47003859CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA834919F47B47003859CE /* main.m */; };
 		28FA834D19F47B47003859CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA834C19F47B47003859CE /* AppDelegate.m */; };
 		28FA835519F47B47003859CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FA835419F47B47003859CE /* Images.xcassets */; };
@@ -21,6 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		28D4BB9B1A6EEF2C00985269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4BB961A6EEF2C00985269 /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		28D4BB9D1A6EF1A300985269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4BB961A6EEF2C00985269 /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
 		28FA835E19F47B47003859CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 28FA833C19F47B47003859CE /* Project object */;
@@ -31,7 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280DDCCC1A8A78890078E3AC /* ZTSecureDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTSecureDataController.h; sourceTree = "<group>"; };
+		280DDCCD1A8A78890078E3AC /* ZTSecureDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTSecureDataController.m; sourceTree = "<group>"; };
 		288FDFA31A5CAFFB004E61F1 /* CompatMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompatMacros.h; sourceTree = "<group>"; };
+		28D4BB961A6EEF2C00985269 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = ../sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 		28FA834419F47B47003859CE /* SecureLoginDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureLoginDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FA834819F47B47003859CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28FA834919F47B47003859CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D4BB9F1A6EF37B00985269 /* libsqlcipher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,9 +90,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28D4BB971A6EEF2C00985269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28D4BB9C1A6EEF2C00985269 /* libsqlcipher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		28FA833B19F47B47003859CE = {
 			isa = PBXGroup;
 			children = (
+				28D4BB961A6EEF2C00985269 /* sqlcipher.xcodeproj */,
 				28FA834619F47B47003859CE /* SecureLoginDelegate */,
 				28FA836019F47B47003859CE /* SecureLoginDelegateTests */,
 				28FA834519F47B47003859CE /* Products */,
@@ -102,6 +132,8 @@
 				28FA837C19F483E4003859CE /* SecureDelegateNotifications.h */,
 				28FA837F19F483FA003859CE /* SecureDelegateNotifications.m */,
 				288FDFA31A5CAFFB004E61F1 /* CompatMacros.h */,
+				280DDCCC1A8A78890078E3AC /* ZTSecureDataController.h */,
+				280DDCCD1A8A78890078E3AC /* ZTSecureDataController.m */,
 			);
 			path = SecureLoginDelegate;
 			sourceTree = "<group>";
@@ -147,6 +179,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				28D4BB9E1A6EF1A300985269 /* PBXTargetDependency */,
 			);
 			name = SecureLoginDelegate;
 			productName = SecureLoginDelegate;
@@ -201,6 +234,12 @@
 			mainGroup = 28FA833B19F47B47003859CE;
 			productRefGroup = 28FA834519F47B47003859CE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 28D4BB971A6EEF2C00985269 /* Products */;
+					ProjectRef = 28D4BB961A6EEF2C00985269 /* sqlcipher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				28FA834319F47B47003859CE /* SecureLoginDelegate */,
@@ -208,6 +247,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		28D4BB9C1A6EEF2C00985269 /* libsqlcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlcipher.a;
+			remoteRef = 28D4BB9B1A6EEF2C00985269 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		28FA834219F47B47003859CE /* Resources */ = {
@@ -237,6 +286,7 @@
 				28FA834A19F47B47003859CE /* main.m in Sources */,
 				28FA837319F47DA2003859CE /* LoginViewController.m in Sources */,
 				28FA838019F483FA003859CE /* SecureDelegateNotifications.m in Sources */,
+				280DDCCE1A8A78890078E3AC /* ZTSecureDataController.m in Sources */,
 				28FA837719F47DC1003859CE /* ProtectedDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,12 +299,18 @@
 				28FA837819F47DC1003859CE /* ProtectedDataViewController.m in Sources */,
 				28FA837419F47DA2003859CE /* LoginViewController.m in Sources */,
 				28FA836419F47B47003859CE /* SecureLoginDelegateTests.m in Sources */,
+				280DDCCF1A8A78890078E3AC /* ZTSecureDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		28D4BB9E1A6EF1A300985269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher;
+			targetProxy = 28D4BB9D1A6EF1A300985269 /* PBXContainerItemProxy */;
+		};
 		28FA835F19F47B47003859CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28FA834319F47B47003859CE /* SecureLoginDelegate */;
@@ -348,8 +404,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../sqlcipher/src,
+				);
 				INFOPLIST_FILE = SecureLoginDelegate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +421,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../sqlcipher/src,
+				);
 				INFOPLIST_FILE = SecureLoginDelegate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 #import "ProtectedDataViewController.h"
-#import "SecureDelegateNotifications.h"
+#import "ZTSecureDataController.h"
 
 @interface ProtectedDataViewController ()
 
@@ -28,7 +28,7 @@
 }
 
 - (IBAction)lock:(id)sender {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kSecureDelegateTimeToLockNotifiction object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kSecureDataControllerLockNowNotifiction object:nil];
 }
 
 /*
